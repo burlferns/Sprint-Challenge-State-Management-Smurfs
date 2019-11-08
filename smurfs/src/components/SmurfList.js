@@ -42,10 +42,10 @@ function SmurfList(props) {
   if(!error && !isFetching) {
     return ( 
       <StylDiv>
-        {smurfData.map(item => 
+        {smurfData.map((item,index) => 
           <SmurfCard
             item={item}
-            key={item.id}
+            key={index}
           />
         )}
 

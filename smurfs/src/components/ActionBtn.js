@@ -13,12 +13,13 @@ const StyledButton = styled.button`
   height:${boxHeight};
   font-size:16px;
   font-family: 'Muli', sans-serif;
+  margin:30px 0;
 `;
 
-export default function SubmitBtn({textDisplay}) {
+export default function ActionBtn({textDisplay,clickHandler}) {
   return (
     <>
-      <StyledButton type="submit">{textDisplay}</StyledButton>
+      <StyledButton type="button" onClick={clickHandler}>{textDisplay}</StyledButton>
     </>
   );
 } 

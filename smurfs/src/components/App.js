@@ -3,7 +3,8 @@ import {connect} from 'react-redux';
 import "./App.css";
 
 import SmurfList from './SmurfList';
-import SubmitBtn from './SubmitBtn';
+import ActionBtn from './ActionBtn';
+import SmurfForm from './SmurfForm';
 
 import {getData} from '../actions';
 
@@ -25,7 +26,9 @@ class App extends Component {
         <div>Start inside of your `src/index.js` file!</div>
         <div>Have fun!</div> */}
 
-        <SubmitBtn textDisplay={"Get Smurf Data from Server"} clickHandler={this.clickHandler}/>
+        <SmurfForm />        
+
+        <ActionBtn textDisplay={"Get Smurf Data from Server"} clickHandler={this.clickHandler}/>
 
         <SmurfList/>
 
